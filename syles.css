@@ -1,0 +1,43 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 60vw;
+    height: 60vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span::after{
+    content: " ";
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: currentColor;
+}
+.pie_chart{
+    background: radial-gradient(circle closest-side,transparent 100%,black 0),
+    conic-gradient(
+        from 180deg,
+        red 0,
+        red 35%,
+        #ff9f43 0,
+        #ff9f43 60%,
+        #f368e0 0,
+        #f368e0 75%,
+        #0abde3 0,
+        #0abde3 89%,
+        #10ac84 0,
+        #10ac84 100%
+
+    );
+    width: 300px;
+    height: 300px;
+    border-radius:50% ;
+}
